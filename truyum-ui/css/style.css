@@ -1,0 +1,19 @@
+.borderless td,
+.borderless th {
+    border: none;
+}
+
+.navbar {
+    background-color: #305496;
+    padding-right: 4%;
+}
+
+a.navbar-brand {
+    font-size: 24pt;
+    margin-left: 2%;
+}
+
+#logo {
+    width: 60px;
+    height: 60px;
+}
