@@ -31,10 +31,59 @@
     </nav>
 
     <section class="bg-light py-3 py-lg-5 px-3 px-lg-5 ">
-        <div class="header ">
-            <h1> Edit Menu Item</h1>
+        <div class="container">
+            <h1> Edit Menu Items</h1>
+        </div>
+        <form>
+            <div class="row">
+                <div class="form-group px-1 px-lg-3">
+                    <label for="number">Name</label>
+                    <input type="text" class="form-control" id="name">
+                </div>
+            </div>
 
+            <div class="row">
+                <div class="d-flex justify-content-left">
+                    <div class="form-group py-1 py-lg-3">
+                        <label for="number">Price (Rs.)</label>
+                        <input type="number" class="form-control" id="number">
+                    </div>
+                    <div class="form-group px-1 px-lg-3 py-1 py-lg-3">
+                        <label for="active">Active</label>
+                        <label for="yes" class="form-control"> Yes
+                            <input type="radio" id="yes" name="active" value="yes" input-type="form-control"></label>
+                        <label for="no" class="form-control"> No
+                            <input type="radio" id="no" name="active" value="no" input-type="form-control"></label>
+                    </div>
+                    <div class="form-group py-1 py-lg-3">
+                        <label for="date">Date of Launch</label>
+                        <input type="date" class="form-control" id="date">
+                    </div>
+                    <div class="form-group px-1 px-lg-3 py-1 py-lg-3">
+                        <label for="category"> Category</label>
+                        <select class="form-control" name="category" id="category-select">
+                                <option value="starters">Starters</option>
+                                <option value="maincourse">Main course</option>
+                                <option value="desserts">Desserts</option>
+                                <option value="drinks">Drinks</option>
+                            </select>
+                    </div>
+                </div>
+            </div>
 
+            <div class="row ">
+                <div class="col-3">
+                    <input type="checkbox" name="free_delivery">
+                    <label for="free_delivery"> Free Delivery</label>
+                </div>
+            </div>
+            <div class="row py-1 py-lg-3">
+                <div class="col-3">
+                    <input type="submit" value="save">
+                </div>
+            </div>
+
+        </form>
     </section>
 </body>
 <footer class="bg-light text-center text-lg-start ">
