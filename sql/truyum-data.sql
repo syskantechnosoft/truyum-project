@@ -22,5 +22,12 @@ INSERT INTO user(us_id, us_name)
 VALUES ('1','John Kenny');
 
 5.a. 
+select m.*
+from menu_item as m
+join cart as c on m.me_id=c.ct_me_id
+where c.ct_us_id = 1;
 5.b.
-6.a.
+select sum(m.*)
+from menu_item as m
+join cart as c on m.me_id=c.ct_me_id
+where c.ct_us_id = 1;
